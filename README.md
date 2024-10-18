@@ -17,7 +17,9 @@ For these you will use Super Macro with the two boxes. On the right, you put whi
 EX. - Edward Macro
 
 /script paladin_1buttonedward()
+
 /script WeaponSwap("Hand of Edward");
+
 /attack
 
 
