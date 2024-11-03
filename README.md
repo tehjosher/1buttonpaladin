@@ -4,12 +4,13 @@ My collection of variations of the 1buttonpally macro created by Qoos, adapted b
 I currently use the weapon swap macro in combination with my specific macros for each situation. If I'm going to be using a 2hander, I want it to exectute a different function from when tanking. The basic idea is the same, it will be checking for various conditions and executing attacks with slight differences in each. Each macro will be called by variation of "/script paladin_1button()", as indicated by the function name at the top so they don't counteract each other.
 
 DPS/Solo - Holy Strike/Crusader Strike on cooldown, keeps up wisdom on target, applies and judges righteousness, checks if mob is undead and if so casts exorsism.
----
+--
 Edward - Attempts to force proc hand of edward. If Focus buff is applied, cast Holy Light. apply Holy Shield, Holy Strike/Crusader Strike on cooldown, keeps up wisdom on target, applies and judges righteousness, checks if mob is undead and if so casts exorsism.
----
+--
 PVP - I currently have this set to Earthshaker so I can spam it to attempt to force proc the AoE stun, while also doing Holy Strike/Crusader Strike on cooldown.
----
+--
 Tank - Apply Holy Shield, Holy Strike/Crusader Strike on cooldown, keeps up wisdom on target*, applies and judges righteousness, checks if mob is undead and if so casts exorsism.
+--
 
 * I use two variations of the tank macro, the 2nd being without wisdom in the event I have another paladin in group keeping up wisdom so I can just spam righteousness instead for threat.
 
