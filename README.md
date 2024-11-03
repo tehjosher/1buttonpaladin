@@ -1,5 +1,5 @@
 # 1buttonpaladin
-My collection of variations of the 1buttonpally macro created by Qoos.
+My collection of variations of the 1buttonpally macro created by Qoos, adapted by me for my liking.
 
 I currently use the weapon swap macro in combination with my specific macros for each situation. If I'm going to be using a 2hander, I want it to exectute a different function from when tanking. The basic idea is the same, it will be checking for various conditions and executing attacks with slight differences in each. Each macro will be called by variation of "/script paladin_1button()", as indicated by the function name at the top so they don't counteract each other.
 
