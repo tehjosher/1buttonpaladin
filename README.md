@@ -27,3 +27,8 @@ EX. - Edward Macro
 REQUIRED ADDONS
 
 Coming soon
+
+
+KNOWN ISSUES:
+
+This macro uses the old set up for crusader strikes where they apply the stacks, so it's not going to work with current Twow update based on that but that section can just be removed. Changes will need to be made to update tanking specs to incorporate Holy Might and other spells.
