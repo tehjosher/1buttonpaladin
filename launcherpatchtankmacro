@@ -35,8 +35,6 @@ function pallytank()
     if buffed(right) and cooldown_for(judgement) == 0 then
       cast(judgement)
     end
-
-
 end
 
 function cooldown_for(spell_name)
@@ -60,15 +58,4 @@ function spell_index(spell_name, spell_rank)
 
         i = i + 1
     end
-end
-
--- If under 20% mana, cast the Rank 1 version of a spell.
-function cast_and_downrank(spell_name)
-    local mana = UnitMana("player")
-    local max_mana = UnitManaMax("player")
-    if mana/max_mana < 0.2 then
-        spell_name = string.format("%s(Rank 1)", spell_name)
-    end
-
-    cast(spell_name)
 end
