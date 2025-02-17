@@ -9,13 +9,14 @@ function rdmg()
     local castSpell = CastSpellByName
     local judgement_crusader = "Judgement of the Crusader"
     local seal_crusader = "Seal of the Crusader"
+    local exorcism = "Exorcism"
+    local perc = "Perception"
 
     -- Crusader Strike (Check mana and cast if enough mana)
     if UnitMana("player") >= 10 then
         castSpell("Crusader Strike")
     end
 
-    -- Keep up Judgement of Wisdom.
     if not buffed(judgement_crusader, "target") and cooldown_for(seal_crusader) == 0 then
         if not buffed(seal_crusader) then
             castSpell(seal_crusader)
@@ -54,9 +55,18 @@ function rdmg()
     if not checkBuff("y_Warrior_InnerRage") and not checkBuff("y_HolyS") then
         castSpell("Seal of Command")
     end
+
+    if cooldown_for(perc) == 0 then
+        castSpell(perc)
+    end
+
+    local target_type = UnitCreatureType("target")
+    if ((target_type == "Undead") or (target_type == "Demon")) and ((mana/max_mana) > .3) and (cooldown_for(exorcism) == 0) then
+        castSpell(exorcism)
+        return
+    end
 end
 
--- Function to check if a buff with a specific icon is present on the player
 function hasBuff(spell)
     for i = 1, 40 do
         local icon = UnitBuff("player", i)
